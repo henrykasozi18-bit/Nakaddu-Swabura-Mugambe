@@ -1,0 +1,989 @@
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ===== Header & Navigation ===== */
+header {
+  background-color: #002147;
+  color: #fff;
+  padding: 1.5rem 2rem;
+}
+
+.header-top {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+}
+
+header p.tagline {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  margin-top: 0.3rem;
+}
+
+nav {
+  background-color: #00306a;
+  text-align: center;
+  padding: 0.8rem 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* ===== Main Content ===== */
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  background: linear-gradient(135deg, #002147 0%, #004a8f 100%);
+  color: #fff;
+  text-align: center;
+  padding: 4rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+  opacity: 0.9;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #c8a415;
+  color: #002147;
+  padding: 0.75rem 2rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #e0b820;
+}
+
+/* ===== Section Titles ===== */
+.section-title {
+  font-size: 2rem;
+  color: #002147;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 1.5rem;
+  color: #002147;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  border-bottom: 2px solid #c8a415;
+  padding-bottom: 0.5rem;
+}
+
+/* ===== Cards Grid ===== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  color: #002147;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.card .icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== Welcome Section ===== */
+.welcome h2 {
+  font-size: 2rem;
+  color: #002147;
+  margin-bottom: 1rem;
+}
+
+.welcome p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+/* ===== About Page ===== */
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about-content p {
+  font-size: 1.05rem;
+  text-align: justify;
+}
+
+.mission-vision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.mission-vision .card {
+  text-align: center;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.stat {
+  background: #002147;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.stat .number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #c8a415;
+}
+
+.stat .label {
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+/* ===== Academics Page ===== */
+.faculty {
+  margin-bottom: 2rem;
+}
+
+.faculty h3 {
+  color: #002147;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  border-left: 4px solid #c8a415;
+}
+
+.programs-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.program {
+  background: #fff;
+  padding: 1rem 1.2rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  font-size: 1rem;
+}
+
+.program::before {
+  content: '▸ ';
+  color: #c8a415;
+  font-weight: bold;
+}
+
+/* ===== Admissions Page ===== */
+.steps {
+  counter-reset: step;
+  margin: 2rem 0;
+}
+
+.step {
+  background: #fff;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  position: relative;
+  padding-left: 4rem;
+}
+
+.step::before {
+  counter-increment: step;
+  content: counter(step);
+  position: absolute;
+  left: 1.2rem;
+  top: 1.5rem;
+  background: #002147;
+  color: #c8a415;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.step h3 {
+  color: #002147;
+  margin-bottom: 0.5rem;
+}
+
+.fees-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.fees-table th,
+.fees-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.fees-table th {
+  background: #002147;
+  color: #fff;
+}
+
+.fees-table tr:last-child td {
+  border-bottom: none;
+}
+
+.fees-table tr:hover td {
+  background: #f0f4f8;
+}
+
+/* ===== Student Life Page ===== */
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.facility {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.facility .icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.facility h3 {
+  color: #002147;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== Contact Page ===== */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.contact-info {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3 {
+  color: #002147;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.contact-info p {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.contact-info .label {
+  font-weight: bold;
+  color: #002147;
+}
+
+.contact-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+  color: #002147;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+  color: #002147;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.form-group textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #002147;
+  box-shadow: 0 0 0 2px rgba(0, 33, 71, 0.15);
+}
+
+.submit-btn {
+  background: #002147;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background: #00306a;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #002147;
+  color: #fff;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.footer-section h4 {
+  color: #c8a415;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.footer-section p,
+.footer-section a {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  line-height: 1.8;
+}
+
+.footer-section a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 0.9rem;
+  opacity: 0.8;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== Hamburger Menu ===== */
+.hamburger {
+  display: none;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  background: #c8a415;
+  border: none;
+  border-radius: 4px;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #002147;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(11px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-11px) rotate(-45deg);
+}
+
+/* ===== Fade-in Animations ===== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Image Gallery ===== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-item .gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 33, 71, 0.85));
+  color: #fff;
+  padding: 1.5rem 1rem 0.8rem;
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+/* ===== Hero with Background Image ===== */
+.hero-image {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 6rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.hero-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 33, 71, 0.65);
+  border-radius: 8px;
+}
+
+.hero-image * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-image h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-image p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+  opacity: 0.95;
+}
+
+/* ===== Page Hero (sub-pages) ===== */
+.page-hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.page-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 33, 71, 0.7);
+  border-radius: 8px;
+}
+
+.page-hero * {
+  position: relative;
+  z-index: 1;
+}
+
+.page-hero h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-hero p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* ===== Image Cards (facility cards with images) ===== */
+.facility-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.facility-image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.facility-image .facility-info {
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.facility-image .facility-info h3 {
+  color: #002147;
+  margin-bottom: 0.5rem;
+}
+
+.facility-image .facility-info p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* ===== About Page Image ===== */
+.about-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Faculty Image Banner ===== */
+.faculty-banner {
+  position: relative;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.faculty-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.faculty-banner .faculty-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 33, 71, 0.85));
+  color: #fff;
+  padding: 1.5rem;
+}
+
+.faculty-banner .faculty-overlay h3 {
+  color: #fff;
+  border: none;
+  padding: 0;
+  font-size: 1.4rem;
+}
+
+/* ===== Lightbox ===== */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 2000;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 85vh;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.lightbox-close:hover {
+  color: #c8a415;
+}
+
+/* ===== Back to Top Button ===== */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 48px;
+  height: 48px;
+  background: #002147;
+  color: #c8a415;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s, background 0.3s;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top:hover {
+  background: #c8a415;
+  color: #002147;
+}
+
+/* ===== Form Validation ===== */
+.form-group input.error,
+.form-group textarea.error,
+.form-group select.error {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.15);
+}
+
+/* ===== Campus Map Section ===== */
+.campus-map {
+  width: 100%;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Social Media Icons ===== */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.social-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  min-width: 120px;
+}
+
+.social-icon:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.social-icon .social-symbol {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.social-icon span:last-child {
+  color: #002147;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.social-icon.facebook .social-symbol { background: #1877f2; }
+.social-icon.twitter .social-symbol { background: #1da1f2; }
+.social-icon.instagram .social-symbol { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+.social-icon.linkedin .social-symbol { background: #0a66c2; }
+
+/* ===== Transport Icons ===== */
+.transport-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #002147;
+  color: #c8a415;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+/* ===== Contact Info Icons ===== */
+.contact-icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: #002147;
+  color: #c8a415;
+  border-radius: 50%;
+  line-height: 32px;
+  text-align: center;
+  font-size: 0.85rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 33, 71, 0.97);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+    padding: 0;
+  }
+
+  nav.nav-open {
+    transform: translateX(0);
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  nav ul li a {
+    font-size: 1.3rem;
+    padding: 0.6rem 1.5rem;
+  }
+
+  .hero h2,
+  .hero-image h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-image {
+    padding: 4rem 1.5rem;
+  }
+
+  .page-hero {
+    padding: 3rem 1.5rem;
+  }
+
+  .about-content,
+  .mission-vision,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery-item img {
+    height: 160px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .social-icons {
+    flex-wrap: wrap;
+  }
+
+  .faculty-banner {
+    height: 150px;
+  }
+}
