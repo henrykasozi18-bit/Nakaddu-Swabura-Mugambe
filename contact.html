@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - St. Lawrence University</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <h1>St. Lawrence University</h1>
+      <p class="tagline">Affordable, Quality & Transformative Higher Education Since 2006</p>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="academics.html">Academics</a></li>
+      <li><a href="admissions.html">Admissions</a></li>
+      <li><a href="student-life.html">Student Life</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="page-hero" style="background-image: url('pictures/09-campus-gate.jpg');">
+      <h2>Contact Us</h2>
+      <p>We would love to hear from you — reach out using any of the methods below</p>
+    </section>
+
+    <div class="contact-grid fade-in">
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+
+        <p>
+          <span class="label"><span class="contact-icon">A</span> Address:</span><br>
+          St. Lawrence University<br>
+          Plot 25, Kira Road<br>
+          Kampala, Uganda
+        </p>
+
+        <p>
+          <span class="label"><span class="contact-icon">P</span> Phone:</span><br>
+          +256 200 123 456<br>
+          +256 700 789 012
+        </p>
+
+        <p>
+          <span class="label"><span class="contact-icon">E</span> Email:</span><br>
+          info@stlawrence.ac.ug<br>
+          admissions@stlawrence.ac.ug
+        </p>
+
+        <p>
+          <span class="label"><span class="contact-icon">H</span> Office Hours:</span><br>
+          Monday – Friday: 8:00 AM – 5:00 PM<br>
+          Saturday: 9:00 AM – 1:00 PM<br>
+          Sunday: Closed
+        </p>
+
+        <h3 style="margin-top: 1.5rem;">Departments</h3>
+
+        <p>
+          <span class="label">Admissions Office:</span><br>
+          admissions@stlawrence.ac.ug
+        </p>
+
+        <p>
+          <span class="label">Registrar's Office:</span><br>
+          registrar@stlawrence.ac.ug
+        </p>
+
+        <p>
+          <span class="label">Student Affairs:</span><br>
+          studentaffairs@stlawrence.ac.ug
+        </p>
+
+        <p>
+          <span class="label">Finance Office:</span><br>
+          finance@stlawrence.ac.ug
+        </p>
+      </div>
+
+      <div class="contact-form">
+        <h3>Send Us a Message</h3>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+          </div>
+
+          <div class="form-group">
+            <label for="department">Department</label>
+            <select id="department" name="department">
+              <option value="">Select a department</option>
+              <option value="admissions">Admissions Office</option>
+              <option value="registrar">Registrar's Office</option>
+              <option value="student-affairs">Student Affairs</option>
+              <option value="finance">Finance Office</option>
+              <option value="academics">Academic Affairs</option>
+              <option value="general">General Inquiry</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What is this regarding?" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <h3 class="section-subtitle fade-in">Find Us on Social Media</h3>
+    <div class="social-icons fade-in">
+      <a href="#" class="social-icon facebook">
+        <span class="social-symbol">f</span>
+        <span>Facebook</span>
+      </a>
+      <a href="#" class="social-icon twitter">
+        <span class="social-symbol">𝕏</span>
+        <span>Twitter</span>
+      </a>
+      <a href="#" class="social-icon instagram">
+        <span class="social-symbol">ig</span>
+        <span>Instagram</span>
+      </a>
+      <a href="#" class="social-icon linkedin">
+        <span class="social-symbol">in</span>
+        <span>LinkedIn</span>
+      </a>
+    </div>
+
+    <h3 class="section-subtitle fade-in">How to Get to Campus</h3>
+    <div class="cards">
+      <div class="card fade-in">
+        <h3>By Road</h3>
+        <p>
+          Our campus is located along Kira Road, easily accessible from central Kampala.
+          Major bus and taxi routes pass by the campus, making commute convenient.
+        </p>
+      </div>
+      <div class="card fade-in">
+        <h3>By Public Transport</h3>
+        <p>
+          Take any bus or taxi heading along Kira Road from Kampala city center (Nasser Road or
+          Kabalagala) and alight at the St. Lawrence University stop.
+        </p>
+      </div>
+      <div class="card fade-in">
+        <h3>From Entebbe Airport</h3>
+        <p>
+          Entebbe International Airport is approximately 40km from our campus.
+          Taxis and airport shuttle services are available for the journey to Kampala.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>St. Lawrence University</h4>
+        <p>A private university in the heart of Kampala, Uganda, committed to affordable, quality, and transformative higher education since 2006.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <p><a href="about.html">About Us</a></p>
+        <p><a href="academics.html">Academics</a></p>
+        <p><a href="admissions.html">Admissions</a></p>
+        <p><a href="student-life.html">Student Life</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Info</h4>
+        <p>Kampala, Uganda</p>
+        <p>Phone: +256 200 123 456</p>
+        <p>Email: info@stlawrence.ac.ug</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>BAIT/26W/U/A0730 — Nakaddu Swabura Mugambe</p>
+      <p>&copy; 2026 St. Lawrence University. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
